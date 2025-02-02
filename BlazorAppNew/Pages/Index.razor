@@ -1,0 +1,51 @@
+﻿@page "/"
+@using BlazorAppNew.NewFolder
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+<SurveyPrompt Title="How is Blazor working for you?" />
+@if (categories == null || categories.Count == 0)
+{
+    <p>Loading categories...</p>
+}
+else if (selectedCategory == null) // If no category is selected, display category selection
+{
+    <h4>Please select a category:</h4>
+    <ul>
+        @foreach (var category in categories)
+        {
+            <li>
+                <button @onclick="() => SelectCategory(category)" class="btn btn-primary my-3">@category.CategoryName</button>
+            </li>
+        }
+    </ul>
+}
+
+@code{
+    private List<Categories>? categories;
+    private Categories? selectedCategory; // Track the selected category
+    private List<Questioms>? filteredQuestions; // Filtered list of questions for the selected category
+    private List<UserSelections> userSelections = new List<UserSelections>();
+    public Writing writing = new Writing();
+    bool isQuizSubmitted = false;
+    int currentQuestionIndex = 0;
+    string cat = "";
+    public Result results;
+
+    protected override void OnInitialized()
+    {
+        //cat = writing.WriteResultToJsonFile(results);
+
+        base.OnInitialized();
+    }
+    private void SelectCategory(Categories category)
+    {
+        selectedCategory = category;
+        filteredQuestions = category.Questions;
+        currentQuestionIndex = 0; // Reset question index
+        isQuizSubmitted = false;  // Reset quiz submission status
+    }
+}

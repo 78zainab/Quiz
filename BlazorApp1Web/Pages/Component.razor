@@ -1,0 +1,67 @@
+﻿@page "/quiz"
+@inject BlazorApp1Web.data.ReadWrite ReadWrite
+
+<h3>Quiz</h3>
+
+@if (questions == null)
+{
+    <p>Loading questions...</p>
+}
+else if (questions.Count == 0)
+{
+    <p>No questions available. Please try again later.</p>
+}
+else
+{
+    <p>Question @currentQuestionIndex + 1 of @questions.Count</p>
+    <h4>@currentQuestion.QuestionText</h4>
+
+    <ul>
+        @foreach (var option in currentQuestion.Option)
+        {
+            <li>
+                <button @onclick="() => SelectOption(option.Text)">
+                    @option.Text
+                </button>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Questions> questions;
+    private int currentQuestionIndex = 0;
+    private Questions currentQuestion;
+
+    protected override async Task OnInitializedAsync()
+    {
+        questions = await ReadWrite.LoadQuestionsAsync();
+        if (questions != null && questions.Count > 0)
+        {
+            currentQuestion = questions[currentQuestionIndex];
+        }
+    }
+
+    private void SelectOption(string selectedOption)
+    {
+        var response = new Result
+            {
+                QuestionText = currentQuestion.QuestionText,
+                SelectedOption = selectedOption
+            };
+
+        // SaveResponseAsync to be implemented for saving
+        // await ReadWrite.SaveResponseAsync(response);
+
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < questions.Count)
+        {
+            currentQuestion = questions[currentQuestionIndex];
+        }
+        else
+        {
+            currentQuestion = null;
+        }
+    }
+}

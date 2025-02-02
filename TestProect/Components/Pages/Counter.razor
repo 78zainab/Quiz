@@ -1,0 +1,96 @@
+﻿@page "/counter"
+@using TestProect.newdata
+<h3>Quiz</h3>
+@if (questionList == null || questionList.Count == 0)
+{
+    <p>Loading questions...</p>
+}
+else
+{
+    <ul>
+        @foreach (var question in questionList)
+        {
+            <li>
+                <h4>@question.QuestionText</h4>
+                <ul>
+                    @foreach (var option in question.Options)
+                    {
+                        <li>
+                            <input type="radio" name="@question.QuestionText" value="@option.Text"
+                                  @onselect="() => OnOptionSelected(question.QuestionText, option.Text, option.Weight)" />
+                            @option.Text
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+   
+
+    @if (totalWeight > 0)
+    {
+        <h4>Your Total Weight: @totalWeight</h4>
+    }
+}
+
+<button @onclick="()=>OnSubmitQuiz()"class="btn btn-primary"> Submit Quiz</button>
+@code {
+    private List<Questions>? questionList;
+    private List<UserSelections> userSelections = new List<UserSelections>();
+    private int totalWeight = 0;
+
+    public ReadJson readJson = new ReadJson();
+    public ManipulateJson manipulate = new ManipulateJson();
+
+    protected override void OnInitialized()
+    {
+        questionList = readJson.GetQuestions();
+
+        if (questionList == null || questionList.Count == 0)
+        {
+            Console.WriteLine("No questions found or failed to load questions.");
+        }
+
+        base.OnInitialized();
+    }
+
+    // Method to capture user selections
+    private void OnOptionSelected(string question, string selectedOption, int weight)
+    {
+        var selection = userSelections.FirstOrDefault(s => s.question == question);
+        if (selection != null)
+        {
+            selection.selectedoption = selectedOption;
+            selection.weight = weight;
+        }
+        else
+        {
+            userSelections.Add(new UserSelections
+                {
+                    question = question,
+                    selectedoption = selectedOption,
+                    weight = weight
+                });
+        }
+    }
+
+    // Method to submit the quiz and calculate total weight
+    //NOT REACHING AT THIS FUNCTION...
+    private void OnSubmitQuiz()
+    {
+        
+        Console.WriteLine("Submit button clicked. Processing selections...");
+
+        foreach (var selection in userSelections)
+        {
+            Console.WriteLine($"Question: {selection.question}, Selected Option: {selection.selectedoption}, Weight: {selection.weight}");
+        }
+
+        var result = manipulate.ProcessSelections(userSelections);
+        totalWeight = result.TotalWeight;
+
+        Console.WriteLine($"Total Weight Calculated: {totalWeight}");
+
+        StateHasChanged(); // Ensure the UI is updated after setting totalWeight
+    }
+}

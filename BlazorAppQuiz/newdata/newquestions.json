@@ -1,0 +1,218 @@
+{
+    "questions": [
+        {
+            "QuestionText": "How do you approach problem-solving?",
+            "Options": [
+                {
+                    "Text": "Break it down into smaller parts",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Look for a similar problem that's already solved",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Brainstorm multiple solutions",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Dive right into it and figure it out as you go",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "How do you handle failure?",
+            "Options": [
+                {
+                    "Text": "Analyze what went wrong and learn from it",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Move on to the next task quickly",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Seek feedback from others",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Get discouraged and take a break",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "What motivates you to achieve your goals?",
+            "Options": [
+                {
+                    "Text": "Personal satisfaction",
+                    "weight": 2
+                },
+                {
+                    "Text": "Recognition from others",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Financial rewards",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Making a positive impact",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "How do you prefer to work on projects?",
+            "Options": [
+                {
+                    "Text": "Independently",
+                    "Weight": 2
+                },
+                {
+                    "Text": "With a mentor or supervisor",
+                    "Weight": 1
+                },
+                {
+                    "Text": "In a team",
+                    "Weight": 3
+                },
+                {
+                    "Text": "With minimal guidance",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "How do you handle stress or pressure?",
+            "Options": [
+                {
+                    "Text": "Stay calm and focused",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Work in a team",
+                    "Weight": 3
+                },
+                {
+                    "Text": "With minimal guidance",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "What is your preferred learning style?",
+            "Options": [
+                {
+                    "Text": "Visual",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Auditory",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Reading/Writing",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Kinesthetic",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "How do you approach new technologies or tools?",
+            "Options": [
+                {
+                    "Text": "Seek advice from others",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Research thoroughly before using",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Learn by doing",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Use trial and error",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "What is your approach to time management?",
+            "Options": [
+                {
+                    "Text": "Prioritize tasks and focus on the important ones",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Handle tasks as they come",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Work in bursts of energy",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Plan and schedule everything",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "What is your approach to feedback?",
+            "Options": [
+                {
+                    "Text": "Welcome and use it to improve",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Accept it but stay focused on your plan",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Consider it but prioritize your judgment",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Avoid or ignore it",
+                    "Weight": 4
+                }
+            ]
+        },
+        {
+            "QuestionText": "How do you gather information for a project?",
+            "Options": [
+                {
+                    "Text": "Conduct thorough research",
+                    "Weight": 2
+                },
+                {
+                    "Text": "Consult with experts",
+                    "Weight": 1
+                },
+                {
+                    "Text": "Use online resources and databases",
+                    "Weight": 3
+                },
+                {
+                    "Text": "Experiment and test",
+                    "Weight": 4
+                }
+            ]
+        }
+    ],
+
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "AllowedHosts": "*"
+}

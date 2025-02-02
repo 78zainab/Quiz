@@ -1,0 +1,1505 @@
+{
+    "categories": [
+        {
+            "CategoryName": "PersonalAttributes",
+            "Questions": [
+                {
+                    "QuestionText": "How do you approach problem-solving?",
+                    "Options": [
+                        {
+                            "Text": "Break it down into smaller parts",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Look for a similar problem that's already solved",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Brainstorm multiple solutions",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Dive right into it and figure it out as you go",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle failure?",
+                    "Options": [
+                        {
+                            "Text": "Analyze what went wrong and learn from it",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Move on to the next task quickly",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Seek feedback from others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Get discouraged and take a break",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What motivates you to achieve your goals?",
+                    "Options": [
+                        {
+                            "Text": "Personal satisfaction",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Recognition from others",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Financial rewards",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Making a positive impact",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you prefer to work on projects?",
+                    "Options": [
+                        {
+                            "Text": "Independently",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "With a mentor or supervisor",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "In a team",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "With minimal guidance",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle stress or pressure?",
+                    "Options": [
+                        {
+                            "Text": "Stay calm and focused",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Work in a team",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "With minimal guidance",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your preferred learning style?",
+                    "Options": [
+                        {
+                            "Text": "Visual",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Auditory",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Reading/Writing",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Kinesthetic",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you approach new technologies or tools?",
+                    "Options": [
+                        {
+                            "Text": "Seek advice from others",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Research thoroughly before using",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Learn by doing",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Use trial and error",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your approach to time management?",
+                    "Options": [
+                        {
+                            "Text": "Prioritize tasks and focus on the important ones",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Handle tasks as they come",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Work in bursts of energy",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Plan and schedule everything",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your approach to feedback?",
+                    "Options": [
+                        {
+                            "Text": "Welcome and use it to improve",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Accept it but stay focused on your plan",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Consider it but prioritize your judgment",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Avoid or ignore it",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you gather information for a project?",
+                    "Options": [
+                        {
+                            "Text": "Conduct thorough research",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Consult with experts",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Use online resources and databases",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Experiment and test",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "SocialActivities",
+            "Questions": [
+                {
+                    "QuestionText": "What is the primary benefit of effective teamwork?",
+                    "Options": [
+                        {
+                            "Text": "Increased productivity",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Enhanced creativity",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Improved problem-solving",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "All of the above",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "Which of the following is a key skill developed when working in a team?",
+                    "Options": [
+                        {
+                            "Text": "Leadership",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Communication",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Conflict resolution",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "All of the above",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is the definition of a team?",
+                    "Options": [
+                        {
+                            "Text": "A group of people working together towards a common goal",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "A group of people who share similar interests",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "A group of people who work independently",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "None of the above",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is one of the benefits of working in a team?",
+                    "Options": [
+                        {
+                            "Text": "Increased motivation",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Enhanced learning opportunities",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Improved job satisfaction",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "All of the above",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "Which of the following is the cooperative action and effort of a group of people acting together?",
+                    "Options": [
+                        {
+                            "Text": "Leadership",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Teamwork",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Team roles",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Learning",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle conflicts within a team?",
+                    "Options": [
+                        {
+                            "Text": "Avoid confrontation and let it resolve on its own",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Address the issue directly with the person involved",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Seek help from a team leader or mediator",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Try to find a compromise that satisfies all parties",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your preferred method of communication in a team?",
+                    "Options": [
+                        {
+                            "Text": "Face-to-face meetings",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Email or written communication",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Instant messaging or chat",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Video calls or teleconferencing",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you contribute to a team's goal?",
+                    "Options": [
+                        {
+                            "Text": "Take on tasks that match my skills",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Offer support and help others with their tasks",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Lead and direct the team's efforts",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Encourage and motivate the team",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What do you value most in a team environment?",
+                    "Options": [
+                        {
+                            "Text": "Individual recognition",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Collaboration and shared success",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Diversity of thought and skills",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Clear roles and responsibilities",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle feedback from team members?",
+                    "Options": [
+                        {
+                            "Text": "Ignore it if it doesn't align with my views",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Consider it but don't always act on it",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Welcome it and use it to improve",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Seek it out and incorporate it into my work",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "LeadershipSkills",
+            "Questions": [
+                {
+                    "QuestionText": "How do you define leadership?",
+                    "Options": [
+                        {
+                            "Text": "Inspiring others to achieve a common goal",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Managing and delegating tasks",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Providing guidance and support",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Being the decision-maker",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is the most important trait of a good leader?",
+                    "Options": [
+                        {
+                            "Text": "Communication",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Empathy",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Confidence",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Decision-making",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle decision-making as a leader?",
+                    "Options": [
+                        {
+                            "Text": "Consider all perspectives before deciding",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Make quick decisions",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Consult with my team",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Delegate decisions to others",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you build trust within your team?",
+                    "Options": [
+                        {
+                            "Text": "Lead by example",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Provide consistent feedback",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Be transparent and open",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Encourage team collaboration",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle underperformance in a team?",
+                    "Options": [
+                        {
+                            "Text": "Provide constructive feedback",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Address the issue immediately",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Offer additional training",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Reassign tasks",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your approach to developing leadership in others?",
+                    "Options": [
+                        {
+                            "Text": "Encourage independent decision-making",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Provide mentorship",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Offer leadership opportunities",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Give regular feedback",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle conflict as a leader?",
+                    "Options": [
+                        {
+                            "Text": "Mediate between team members",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Address the conflict directly",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Encourage open discussion",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Allow the team to resolve it on their own",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is the role of communication in leadership?",
+                    "Options": [
+                        {
+                            "Text": "It builds trust and transparency",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "It ensures tasks are clearly understood",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "It motivates and engages the team",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "All of the above",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you motivate your team as a leader?",
+                    "Options": [
+                        {
+                            "Text": "Recognize individual achievements",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Set clear and achievable goals",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Create a supportive environment",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Provide incentives",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your leadership style?",
+                    "Options": [
+                        {
+                            "Text": "Democratic",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Autocratic",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Laissez-faire",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Transformational",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "WorkEthics",
+            "Questions": [
+                {
+                    "QuestionText": "How do you prioritize your tasks?",
+                    "Options": [
+                        {
+                            "Text": "Based on deadlines",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Based on importance",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Based on available resources",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Based on complexity",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you approach working under tight deadlines?",
+                    "Options": [
+                        {
+                            "Text": "Work faster to meet the deadline",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Break tasks into smaller parts",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Communicate with your team",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Reschedule less important tasks",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What motivates you to maintain a strong work ethic?",
+                    "Options": [
+                        {
+                            "Text": "Personal satisfaction",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Achieving goals",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Recognition from peers",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Compensation",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle a task you don't enjoy?",
+                    "Options": [
+                        {
+                            "Text": "Find ways to make it interesting",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Focus on the end goal",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Ask for help",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Delegate it",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you ensure that your work meets high standards?",
+                    "Options": [
+                        {
+                            "Text": "Double-check my work",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Seek feedback",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Compare it with past work",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Follow set guidelines",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you balance quality with efficiency?",
+                    "Options": [
+                        {
+                            "Text": "Prioritize quality over speed",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Find a balance between the two",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Focus on completing tasks quickly",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Improve quality afterward",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you respond to feedback on your work?",
+                    "Options": [
+                        {
+                            "Text": "Make changes immediately",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Evaluate the feedback first",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Discuss the feedback with the person",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Decide which feedback is useful",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you manage your time at work?",
+                    "Options": [
+                        {
+                            "Text": "Plan and schedule everything",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Prioritize tasks based on deadlines",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Work on the most important task first",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Adjust as new tasks come up",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle tasks that are not part of your job description?",
+                    "Options": [
+                        {
+                            "Text": "Take them on willingly",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Discuss them with your supervisor",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Delegate them if possible",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Focus only on your assigned tasks",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your approach to managing long-term projects?",
+                    "Options": [
+                        {
+                            "Text": "Break them into smaller tasks",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Set short-term goals",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Review progress regularly",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Focus on the final deadline",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "CommunicationSkills",
+            "Questions": [
+                {
+                    "QuestionText": "How do you ensure clarity in your communication?",
+                    "Options": [
+                        {
+                            "Text": "Use simple language",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Confirm understanding with the listener",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Provide examples",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Repeat key points",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle miscommunication?",
+                    "Options": [
+                        {
+                            "Text": "Clarify the misunderstanding",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Apologize and correct mistakes",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Ask the other person for clarification",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Ignore it and move on",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your preferred method of communication?",
+                    "Options": [
+                        {
+                            "Text": "Face-to-face",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Email",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Phone or video calls",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Instant messaging",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle feedback in communication?",
+                    "Options": [
+                        {
+                            "Text": "Seek feedback regularly",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Consider feedback but follow my own style",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Ask for specific suggestions",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Ignore feedback",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you adapt your communication style to different audiences?",
+                    "Options": [
+                        {
+                            "Text": "Adjust my tone and language",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Focus on understanding the audience",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Stick to my usual style",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Avoid adjusting my style",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you ensure that you're being understood?",
+                    "Options": [
+                        {
+                            "Text": "Ask for feedback",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Check for understanding regularly",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Provide examples or visual aids",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Assume the listener understands",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is the most effective way to communicate in a team?",
+                    "Options": [
+                        {
+                            "Text": "Regular face-to-face meetings",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Instant messaging for quick updates",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Email for detailed instructions",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "A combination of methods",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you communicate in stressful situations?",
+                    "Options": [
+                        {
+                            "Text": "Stay calm and composed",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Take time before responding",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Respond immediately",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Avoid communication",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is the key to successful written communication?",
+                    "Options": [
+                        {
+                            "Text": "Clear and concise language",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Thorough explanations",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Correct grammar and spelling",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Formal tone",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle sensitive information in communication?",
+                    "Options": [
+                        {
+                            "Text": "Handle it confidentially",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Disclose only necessary details",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Seek approval before sharing",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Share openly with the team",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "ProblemSolving",
+            "Questions": [
+                {
+                    "QuestionText": "How do you approach complex problems?",
+                    "Options": [
+                        {
+                            "Text": "Break them down into smaller parts",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Brainstorm multiple solutions",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Research similar problems",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Tackle them head-on",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you evaluate potential solutions?",
+                    "Options": [
+                        {
+                            "Text": "Compare pros and cons",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Test them quickly",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Consult with others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Pick the first workable solution",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you deal with unexpected obstacles?",
+                    "Options": [
+                        {
+                            "Text": "Reassess the situation",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Push through the obstacle",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Find alternative solutions",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Seek help from others",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your first step when faced with a new problem?",
+                    "Options": [
+                        {
+                            "Text": "Understand the problem fully",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Start looking for solutions",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Ask for help from others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Solve it through trial and error",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you ensure your solution is effective?",
+                    "Options": [
+                        {
+                            "Text": "Test it thoroughly",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Compare it with alternative solutions",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Get feedback from others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Rely on previous experience",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle uncertainty when solving problems?",
+                    "Options": [
+                        {
+                            "Text": "Do more research",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Make decisions based on intuition",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Seek advice from others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Try different solutions until something works",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you gather information to solve a problem?",
+                    "Options": [
+                        {
+                            "Text": "Conduct thorough research",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Consult with experts",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Use trial and error",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Rely on past experience",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you improve your problem-solving skills?",
+                    "Options": [
+                        {
+                            "Text": "Learn from past mistakes",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Take on new challenges",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Seek feedback from others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Read and study problem-solving techniques",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you approach problems with limited information?",
+                    "Options": [
+                        {
+                            "Text": "Make decisions based on available data",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Gather more information",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Consult with others",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Use intuition and experience",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle solving problems in a team?",
+                    "Options": [
+                        {
+                            "Text": "Collaborate and brainstorm solutions",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Divide the problem into parts",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Delegate tasks to team members",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Take the lead in finding a solution",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "CategoryName": "ConflictResolution",
+            "Questions": [
+                {
+                    "QuestionText": "How do you handle conflicts with team members?",
+                    "Options": [
+                        {
+                            "Text": "Address the issue directly",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Seek a compromise",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Involve a mediator",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Ignore it and hope it resolves",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you prevent conflicts from escalating?",
+                    "Options": [
+                        {
+                            "Text": "Stay calm and composed",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Address issues early",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Encourage open communication",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Avoid addressing the conflict",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "What is your first step in resolving conflicts?",
+                    "Options": [
+                        {
+                            "Text": "Listen to all parties involved",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Propose a solution immediately",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Take time to understand the issue",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Ignore it and hope it resolves",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you ensure fairness when resolving conflicts?",
+                    "Options": [
+                        {
+                            "Text": "Listen to both sides",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Remain neutral",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Let the majority decide",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Favor the person with more authority",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle conflicts with a supervisor?",
+                    "Options": [
+                        {
+                            "Text": "Address the issue respectfully",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Seek HR or a mediator",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Avoid confrontation",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Discuss it with other team members first",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you approach conflicts with clients or customers?",
+                    "Options": [
+                        {
+                            "Text": "Listen and address their concerns",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Apologize and offer a solution",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Escalate it to a supervisor",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Explain your perspective",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle conflicts between team members?",
+                    "Options": [
+                        {
+                            "Text": "Mediate the discussion",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Encourage them to resolve it",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Involve a manager",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Stay out of it",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you resolve conflicts when working under pressure?",
+                    "Options": [
+                        {
+                            "Text": "Stay calm and focused",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Address the conflict directly",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Seek quick compromises",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Avoid the conflict until later",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you handle conflicts in a remote team?",
+                    "Options": [
+                        {
+                            "Text": "Address issues through video calls",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Use written communication to clarify issues",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Involve a team leader remotely",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Wait until an in-person meeting",
+                            "Weight": 4
+                        }
+                    ]
+                },
+                {
+                    "QuestionText": "How do you ensure long-term resolution of conflicts?",
+                    "Options": [
+                        {
+                            "Text": "Create follow-up steps",
+                            "Weight": 1
+                        },
+                        {
+                            "Text": "Ensure both sides are satisfied",
+                            "Weight": 2
+                        },
+                        {
+                            "Text": "Review the issue after some time",
+                            "Weight": 3
+                        },
+                        {
+                            "Text": "Trust the issue will not resurface",
+                            "Weight": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

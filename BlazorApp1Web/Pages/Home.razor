@@ -1,0 +1,18 @@
+﻿@page "/"
+<h1>MOVE THE COMPONENT PAGE</h1>
+
+<button @onclick="TestButtonClick">Test Button</button>
+<!--
+    IT'S A RAZOR PAGE OF SECOND PROJECT, BUTTON CLICKING EVENT HAS 
+    BEEN FIRING ON THIS PAGE
+-->
+<p><span style="color: blue">@message</span></p>
+
+@code {
+    private string message = "";
+
+    private void TestButtonClick()
+    {
+        message = "Test button clicked.";
+    }
+}

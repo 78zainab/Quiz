@@ -1,0 +1,30 @@
+﻿@page "/"
+@using Newtonsoft.Json
+@using TestProect.mydata
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+@foreach (var item in usersList)
+{
+    <p>@item.firstName</p>
+    <p>@item.lastName</p>
+}
+
+
+
+
+@code{
+    private List<User>? usersList{ get; set; }
+    private ReadWrite readWrite = new ReadWrite();
+    protected override void OnInitialized()
+    {
+        usersList=readWrite.GetUser();
+        base.OnInitialized();
+    }
+
+
+   
+
+}

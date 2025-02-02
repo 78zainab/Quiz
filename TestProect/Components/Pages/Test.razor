@@ -1,0 +1,21 @@
+﻿@page "/test"
+<!--
+    IT'S A TEST PAGE JUST FOR CHECKING WHETHER THE BUTTON CLICKING IS 
+    WORKING OR NOT
+-->
+<h3>Test Page</h3>
+
+<button @onclick="()=>TestButtonClick()">Test Button</button>
+<!--THIS BUTTON HAS NOT BEEN TRIGGERING -->
+
+<p><span style="color: blue">@message</span></p>
+
+
+@code {
+    private string message = "";
+
+    private void TestButtonClick()
+    {
+        message = "Test button clicked.";
+    }
+}

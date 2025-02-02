@@ -1,0 +1,250 @@
+﻿@page "/counter"
+
+<PageTitle>Quiz</PageTitle>
+
+@using BlazorAppQuiz.newdata
+
+<h1>Quiz</h1>
+
+@if (categories == null || categories.Count == 0)
+{
+    <p>Loading categories...</p>
+}
+else if (selectedCategory == null) 
+{
+    <h4>Please select a category:</h4>
+    <ul>
+        @foreach (var category in categories)
+        {
+            <li>
+                <button @onclick="() => SelectCategory(category)" class="btn btn-primary my-3">@category.CategoryName</button>
+            </li>
+        }
+    </ul>
+}
+else if (filteredQuestions == null || filteredQuestions.Count == 0) // If the selected category has no questions
+{
+    <p>No questions available for this category.</p>
+}
+else if (!isQuizSubmitted) // If the quiz has not been submitted, show questions
+{
+    <div>
+        <h4>Category: @selectedCategory.CategoryName</h4>
+        <h4>Question @currentQuestionNumber/@filteredQuestions.Count</h4>
+
+        <h4>@filteredQuestions[currentQuestionIndex].QuestionText</h4>
+        <ul>
+            @foreach (var option in filteredQuestions[currentQuestionIndex].Options)
+            {
+                <li>
+                    <input type="radio" name="currentQuestion" value="@option.Text"
+                           @onchange="() => OnOptionSelected(filteredQuestions[currentQuestionIndex].QuestionText, option.Text, option.Weight)"
+                           checked="@IsOptionSelected(option.Text)" />
+                    @option.Text
+                </li>
+            }
+        </ul>
+
+        <!-- Navigation buttons -->
+        <button @onclick="PreviousQuestion" class="btn btn-secondary" disabled="@IsFirstQuestion()">Previous</button>
+        <button @onclick="NextQuestion" class="btn btn-secondary" disabled="@IsLastQuestion()">Next</button>
+
+        <!-- Submit button appears only on the last question -->
+        @if (IsLastQuestion())
+        {
+            <button @onclick="OnSubmitCategory" class="btn btn-primary ms-3">Submit Category</button>
+            <!-- Show "Next Category" button when at the last question of the last category -->
+            @if (IsLastCategory())
+            {
+                <button @onclick="OnSubmitAllCategories" class="btn btn-primary ms-3">Submit All Categories</button>
+            }
+            else
+            {
+                <button @onclick="NextCategory" class="btn btn-secondary ms-3">Next Category</button>
+            }
+        }
+
+        <!-- Back to categories button -->
+        <button @onclick="BackToCategories" class="btn btn-primary ms-1">Back to Categories</button>
+    </div>
+}
+
+@if (isQuizSubmitted && categoryResults.Count > 0) // Show results after quiz submission
+{
+    <h4>Quiz Results</h4>
+    @foreach (var result in categoryResults)
+    {
+        <div>
+            <h5>Category: @result.CategoryName</h5>
+            @foreach (var selection in result.UserSelections)
+            {
+                <div>
+                    <strong>Question:</strong> @selection.Question<br />
+                    <strong>Selected Option:</strong> @selection.SelectedOption<br />
+                    <strong>Weight:</strong> @selection.Weight
+                </div>
+            }
+            <h4>Total Weight for @result.CategoryName: @result.TotalWeight</h4>
+        </div>
+    }
+
+    <h4>Grand Total Weight: @overallTotalWeight</h4>
+
+    <button @onclick="BackToCategories" class="btn btn-primary">Back to Categories</button>
+}
+
+@code {
+    private List<Category>? categories; // List of categories
+    private Category? selectedCategory; // Track the selected category
+    private List<Questions>? filteredQuestions; // Filtered list of questions for the selected category
+    private List<UserSelections> userSelections = new List<UserSelections>();
+    private List<CategoryResult> categoryResults = new List<CategoryResult>();
+    private int overallTotalWeight = 0;
+    private bool isQuizSubmitted = false; // Track quiz submission
+    private int currentQuestionIndex = 0;
+    private int currentCategoryIndex = 0;
+
+    public ReadJson readJson = new ReadJson();
+    public ManipulateJson manipulate = new ManipulateJson();
+    public StoringResponse storingResponse = new StoringResponse();
+
+    protected override void OnInitialized()
+    {
+        categories = readJson.GetQuestions();
+        if (categories == null || categories.Count == 0)
+        {
+            Console.WriteLine("No categories found or failed to load.");
+        }
+
+        base.OnInitialized();
+    }
+
+    // This is used to display the question numbers as one-based.
+    private int currentQuestionNumber => currentQuestionIndex + 1;
+
+    // Method to capture user selections
+    private void OnOptionSelected(string question, string selectedOption, int weight)
+    {
+        var selection = userSelections.FirstOrDefault(s => s.Question == question);
+        if (selection != null)
+        {
+            selection.SelectedOption = selectedOption;
+            selection.Weight = weight;
+        }
+        else
+        {
+            userSelections.Add(new UserSelections
+                {
+                    Question = question,
+                    SelectedOption = selectedOption,
+                    Weight = weight,
+                    CategoryName = selectedCategory?.CategoryName
+                });
+        }
+    }
+
+    // Method to select a category
+    private void SelectCategory(Category category)
+    {
+        selectedCategory = category;
+        filteredQuestions = category.Questions;
+        currentQuestionIndex = 0; // Reset question index
+        isQuizSubmitted = false;  // Reset quiz submission status
+    }
+
+    // Method to go back to categories
+    private void BackToCategories()
+    {
+        selectedCategory = null;
+        filteredQuestions = null;
+        userSelections.Clear();
+        currentQuestionIndex = 0;
+        isQuizSubmitted = false;
+    }
+
+    // Navigation methods
+    private void NextQuestion()
+    {
+        if (currentQuestionIndex < filteredQuestions.Count - 1)
+        {
+            currentQuestionIndex++;
+        }
+    }
+
+    private void PreviousQuestion()
+    {
+        if (currentQuestionIndex > 0)
+        {
+            currentQuestionIndex--;
+        }
+    }
+
+    private bool IsFirstQuestion() => currentQuestionIndex == 0;
+    private bool IsLastQuestion() => currentQuestionIndex == filteredQuestions.Count - 1;
+
+    // Submit the current category and move to the next category
+    private void OnSubmitCategory()
+    {
+        // Process all selections by category
+        var resultsByCategory = manipulate.ProcessSelectionsByCategory(userSelections);
+
+        // Get the result for the current category using the category name as the key
+        if (selectedCategory?.CategoryName != null && resultsByCategory.TryGetValue(selectedCategory.CategoryName, out var result))
+        {
+            // Add the result for the current category to categoryResults
+            categoryResults.Add(new CategoryResult
+                {
+                    CategoryName = selectedCategory?.CategoryName,
+                    UserSelections = new List<UserSelections>(userSelections),
+                    TotalWeight = result.TotalWeight // Now accessing the total weight for the current category
+                });
+        }
+
+        // Clear selections for the next category
+        userSelections.Clear();
+
+        // Move to the next category
+        NextCategory();
+    }
+
+
+    // Move to the next category
+    private void NextCategory()
+    {
+        if (currentCategoryIndex < categories.Count - 1)
+        {
+            currentCategoryIndex++;
+            SelectCategory(categories[currentCategoryIndex]);
+        }
+    }
+
+    // Submit the quiz for all categories
+    private void OnSubmitAllCategories()
+    {
+        // Calculate overall total weight
+        overallTotalWeight = categoryResults.Sum(r => r.TotalWeight);
+
+        isQuizSubmitted = true;  // Mark quiz as submitted
+        
+        StateHasChanged();       // Ensure UI updates
+    }
+
+
+    // Method to check if the current category is the last one
+    private bool IsLastCategory() => currentCategoryIndex == categories.Count - 1;
+
+    // Check if the option is selected for the current question
+    private bool IsOptionSelected(string optionText)
+    {
+        var selection = userSelections.FirstOrDefault(s => s.Question == filteredQuestions[currentQuestionIndex].QuestionText);
+        return selection != null && selection.SelectedOption == optionText;
+    }
+       
+    // Data structure to store category results
+    private class CategoryResult
+    {
+        public string? CategoryName { get; set; }
+        public List<UserSelections> UserSelections { get; set; } = new List<UserSelections>();
+        public int TotalWeight { get; set; }
+    }
+}
